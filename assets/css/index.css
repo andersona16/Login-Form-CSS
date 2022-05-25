@@ -1,61 +1,60 @@
-section > div:nth-child(1) {
+section {
+  width: 100vh;
+  height: 100vh;
+}
+section main > div:nth-child(1) {
   display: flex;
-  background-image: url(../img/side-image.jpg);
 }
-section > div:nth-child(1) main {
+section main > div:nth-child(1) > div:nth-child(1) {
+  background-image: url(../img//side-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vh;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-section > div:nth-child(1) main > div:nth-child(1) {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-section > div:nth-child(1) main > div:nth-child(1) > div:nth-child(1) {
-  display: flex;
-  gap: 10px;
-}
-section > div:nth-child(1) main > div:nth-child(1) > div:nth-child(1) h1 {
-  color: var(--text-title);
-  font-size: 26px;
-}
-section > div:nth-child(1) main > div:nth-child(1) span {
-  font-size: 16px;
-  color: var(--text-base);
-  margin-bottom: 20px;
-}
-section > div:nth-child(1) main > div:nth-child(2),
-section > div:nth-child(1) main > div:nth-child(3) {
+section main form > div:nth-child(1) {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-top: 20px;
 }
-section > div:nth-child(1) main > div:nth-child(2) input,
-section > div:nth-child(1) main > div:nth-child(3) input {
+section main form > div:nth-child(1) input {
   height: 44px;
   width: 335px;
   border: 1px solid #ffc632;
 }
-section > div:nth-child(1) main > div:nth-child(4) {
+section main form > div:nth-child(2) {
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
   margin: 0 auto;
   margin-top: 20px;
 }
-section > div:nth-child(1) main > div:nth-child(4) > input {
-  height: 20px;
-  width: 20px;
+section main form > div:nth-child(2) > input {
+  height: 44px;
+  width: 335px;
+  border: 1px solid #ffc632;
 }
-section > div:nth-child(1) main > div:nth-child(4) > input :checked {
+section main form > div:nth-child(2) > input :checked {
   background-color: var(--primary-color);
 }
-section > div:nth-child(1) main > div:nth-child(4) span {
+section main form > div:nth-child(2) span {
   color: var(--primary-color);
 }
-section > div:nth-child(1) main > div:nth-child(5) {
+section main form > div:nth-child(3) {
+  display: flex;
+}
+section main form > div:nth-child(3) > span {
+  border: none;
+  color: var(--primary-color);
+  height: 21px;
+  width: 153px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+section main form > div:nth-child(4) {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,7 +62,7 @@ section > div:nth-child(1) main > div:nth-child(5) {
   gap: 20px;
   margin-top: 20px;
 }
-section > div:nth-child(1) main > div:nth-child(5) > button {
+section main form > div:nth-child(4) > button {
   background-color: var(--primary-color);
   border: none;
   color: #473404;
@@ -73,10 +72,10 @@ section > div:nth-child(1) main > div:nth-child(5) > button {
   font-weight: 600;
   cursor: pointer;
 }
-section > div:nth-child(1) main > div:nth-child(5) span {
+section main form > div:nth-child(4) span {
   color: var(--primary-color);
 }
-section > div:nth-child(1) main > div:nth-child(5) span > button {
+section main form > div:nth-child(4) span > button {
   color: var(--primary-color);
   border: none;
   cursor: pointer;

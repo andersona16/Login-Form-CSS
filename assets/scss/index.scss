@@ -1,36 +1,20 @@
 section {
-  > div:nth-child(1) {
-    display: flex;
-    background-image: url(../img/side-image.jpg);
-
-    main {
+  width: 100vh;
+  height: 100vh;
+  main {
+    > div:nth-child(1) {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
       > div:nth-child(1) {
+        background-image: url(../img//side-image.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vh;
+        height: 100vh;
         display: flex;
-        flex-direction: column;
-        gap: 10px;
-        > div:nth-child(1) {
-          display: flex;
-          gap: 10px;
-
-          h1 {
-            color: var(--text-title);
-            font-size: 26px;
-          }
-        }
-
-        span {
-          font-size: 16px;
-          color: var(--text-base);
-          margin-bottom: 20px;
-        }
       }
-      > div:nth-child(2),
-      > div:nth-child(3) {
+    }
+    form {
+      > div:nth-child(1) {
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -42,14 +26,16 @@ section {
           border: 1px solid #ffc632;
         }
       }
-      > div:nth-child(4) {
+      > div:nth-child(2) {
         display: flex;
         justify-content: space-around;
+        flex-direction: column;
         margin: 0 auto;
         margin-top: 20px;
         > input {
-          height: 20px;
-          width: 20px;
+          height: 44px;
+          width: 335px;
+          border: 1px solid #ffc632;
           :checked {
             background-color: var(--primary-color);
           }
@@ -58,7 +44,21 @@ section {
           color: var(--primary-color);
         }
       }
-      > div:nth-child(5) {
+
+      > div:nth-child(3) {
+        display: flex;
+
+        > span {
+          border: none;
+          color: var(--primary-color);
+          height: 21px;
+          width: 153px;
+          font-size: 14px;
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+      > div:nth-child(4) {
         display: flex;
         flex-direction: column;
         align-items: center;
